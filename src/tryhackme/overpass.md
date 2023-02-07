@@ -2,7 +2,13 @@
 
 ![password cracking](../../img/passwordCracking.webp)
 
-Hello fellow hackers, time to capture the flag :triangular_flag_on_post:! This room was built by [NinjaJc01](https://tryhackme.com/p/NinjaJc01) and consists in cracking a password manager. This writeup will guide you through the process of completing this room rather than providing you with answers. If you enjoy this kind of content .
+Hello fellow hackers, time to capture the flag :triangular_flag_on_post:! This room was built by [NinjaJc01](https://tryhackme.com/p/NinjaJc01) and consists in cracking a password manager. I am writing this article as I progress along the room. It will therefore include my thought process, dead ends, good as well as bad decisions. If you enjoy this kind of content .
+
+> **Quote of the Day**
+>
+> No man has the right to be an amateur in the matter of physical training. It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable.
+> 
+> Socrates
 
 ## nmap scan
 
@@ -12,8 +18,8 @@ The first thing we do right after deploying the machine it kick off an nmap scan
 nmap -sC -sV -sS -vv -oN nmapScan.txt 10.10.151.212
 ```
 
-> **Note**
-> A good nmap cheat sheet can be found [here](https://www.stationx.net/nmap-cheat-sheet/).
+> **Note:**
+> a good nmap cheat sheet can be found [here](https://www.stationx.net/nmap-cheat-sheet/)
 
 <details>
   <summary>The nmap scan result can be found below.</summary>
@@ -84,3 +90,5 @@ Nmap done: 1 IP address (1 host up) scanned in 14.27 seconds
 ```
 
 </details>
+
+From the nmap scan we can see that two ports are open: port 22 running SSH and port 80 running HTTP.
