@@ -18,8 +18,8 @@ The first thing we do right after deploying the machine it kick off an nmap scan
 nmap -sC -sV -sS -vv -oN nmapScan.txt 10.10.151.212
 ```
 
-> **Note:**
-> a good nmap cheat sheet can be found [here](https://www.stationx.net/nmap-cheat-sheet/)
+> **Note**
+>  a good nmap cheat sheet can be found [here](https://www.stationx.net/nmap-cheat-sheet/)
 
 <details>
   <summary>The nmap scan result can be found below.</summary>
